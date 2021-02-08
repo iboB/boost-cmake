@@ -43,37 +43,37 @@ set(BOOST_LIBS_REQUIRED
   # Header only libs
   header
 )
-set(BOOST_LIBS_OPTIONAL
-  # Compiled libs
-  atomic
-  chrono
-  container
-  context
-  coroutine
-  date_time
-  exception
-  fiber
-  filesystem
-  graph
-  iostreams
-  locale
-  log
-  math
-  mpi
-  graph_parallel # depends on mpi, so needs to be put after it
-  program_options
-  #python # complex module
-  random
-  regex
-  serialization
-  system
-  test
-  thread
-  timer
-  type_erasure
-  wave
-  CACHE STRING "Boost libs to be compiled"
-)
+#~ set(BOOST_LIBS_OPTIONAL
+#~   # Compiled libs
+#~   atomic
+#~   chrono
+#~   container
+#~   context
+#~   coroutine
+#~   date_time
+#~   exception
+#~   fiber
+#~   filesystem
+#~   graph
+#~   iostreams
+#~   locale
+#~   log
+#~   math
+#~   mpi
+#~   graph_parallel # depends on mpi, so needs to be put after it
+#~   program_options
+#~   #python # complex module
+#~   random
+#~   regex
+#~   serialization
+#~   system
+#~   test
+#~   thread
+#~   timer
+#~   type_erasure
+#~   wave
+#~   CACHE STRING "Boost libs to be compiled"
+#~ )
 
 foreach(lib ${BOOST_LIBS_REQUIRED})
   include("libs/${lib}.cmake")
